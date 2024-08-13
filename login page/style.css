@@ -1,0 +1,110 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://picsum.photos/2000/1000'); /* add a background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* make the body full height */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* make the container full height */
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.2); /* make the login box more transparent */
+    padding: 20px;
+    border: 1px solid #ddd; /* light gray border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px; /* set the width of the login box */
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center; /* center the heading */
+    color: #fff; /* make the heading white */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left; /* left align the labels */
+    color: #fff; /* make the labels white */
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* make the input boxes full width */
+    background-color: rgba(255, 255, 255, 0.5); /* make the input boxes more transparent */
+    color: #fff; /* make the input text white */
+}
+
+.button-container {
+    text-align: right; /* right align the button */
+}
+
+.right-align {
+    float: right; /* float the button to the right */
+    margin-right: 10px; /* add some margin to the right */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 5px 10px; /* reduce the padding to make the button smaller */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px; /* reduce the font size to make the button smaller */
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.loading {
+    text-align: center; /* center the loading animation */
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.bounce1, .bounce2, .bounce3 {
+    width: 15px;
+    height: 15px;
+    background-color: #4CAF50;
+    border-radius: 100%;
+    display: inline-block;
+    animation: bouncedelay 1.4s infinite ease-in-out both;
+    animation-fill-mode: both;
+}
+
+.bounce1 {
+    animation-delay: -0.32s;
+}
+
+.bounce2 {
+    animation-delay: -0.16s;
+}
+
+@keyframes bouncedelay {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
